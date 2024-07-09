@@ -1,0 +1,184 @@
+
+/* =======userpanel custome shadow===== */
+.customShadow{
+    box-shadow: 2px 0px 2px #dfe4ea;
+}
+
+
+/* ==========customHeaderStyle */
+.customHeaderStyle{
+    border-bottom: 1px solid red;
+}
+
+/* =============adminCustoms */
+.adminCustoms{
+    border-bottom: 1px solid rgb(203 213 225);
+}
+
+
+/*=====================userCustomTable==========  */
+.userCustomTable{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.userCustomTable th{
+    background-color: #FE4938;
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid #dcdde1;
+}
+
+.userCustomTable th:nth-of-type(1){
+    width:15%;
+}
+.userCustomTable th:nth-of-type(2){
+    width:23%;
+}
+.userCustomTable th:nth-of-type(3){
+    width:22%;
+}
+.userCustomTable th:nth-of-type(4){
+    width:13%;
+}
+.userCustomTable th:nth-of-type(5){
+    width:17%;
+}
+
+.userCustomTable th:nth-of-type(6){
+    width:10%;
+}
+
+.userCustomTable tbody tr{
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+.userCustomTable td{
+    text-align: center;
+    font-size: 16px;
+    padding: 0.9px 0;
+    font-weight: 400;
+    border: 1px solid #dcdde1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* ==================Spinner=================== */
+
+#loading {
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #ffbcb6;
+    border-radius: 50%;
+    border-top-color: #FE4938;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+
+
+  /* ==================active navlink======================= */
+  .active{
+    @apply bg-slate-200;
+    font-weight: 500;
+  }
+
+
+  /* ============scroll bar============= */
+  /* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(201, 201, 201); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: lightgrey; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: lightgray; 
+  }
+
+
+  /* ================pagination=============== */
+  .pagination-wrapper{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    margin: auto;
+  }
+
+
+  .pagination{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .pagination button{
+    background-color: #FE4938;
+    padding: 3px 10px;
+    color: #fff;
+    border-radius: 3px;
+  }
+
+  /* ================scrollbar-none================ */
+  .scrollbar-none::-webkit-scrollbar{
+    display: none;
+  }
+
+
+
+  /* ==========order table================= */
+  .orderTable{
+    margin-top: 10px;
+  }
+
+  .orderTable th{
+    background-color: #FE4938;
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid #dcdde1;
+}
+
+.orderTable th{
+    width:25%;
+}
+
+.orderTable td{
+  text-align: center;
+  font-size: 16px;
+  padding: 0.9px 0.5px;
+  font-weight: 400;
+  border: 1px solid #dcdde1;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+@media (max-width: 768px) {
+  .orderTable th{
+    font-weight: 400;
+    font-size: 14.5px;
+}
+}
+
